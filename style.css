@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Martel+Sans:700|Roboto:400,900&display=swap');
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(251, 50, 0);
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0);
+    }
+    to {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+    }
+}
+
+@keyframes light {
+    from {
+        color: rgba(230, 230, 230, 0);
+    }
+    to {
+        color: rgba(248, 247, 247, 0.9);
+    }
+}
+
+h1 {
+    
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    animation-name: glow, light;
+    animation-duration: 4s, 2s;
+    animation-delay: 0s, 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    color: rgba(248, 247, 247, 0);
+}
+
+main {
+    z-index: 5;
+    
+    width: 100%;
+}
+
+main > section {
+    height: 100vh;
+}
+
+nav {
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    height: 2rem;
+    z-index: 40;
+    padding: 0.75rem;
+}
+
+nav a {
+    padding: 0.5rem 1rem;
+    border: 2px solid rgb(251, 50, 0);
+    border-radius: 5px;
+    background: rgba(10, 10, 10, 0.3);
+}
+
+nav a:hover {
+    color: rgb(0, 35, 51);
+    background: rgb(251, 50, 0);
+}
+
+.welcome header {
+    width: 700px;
+    padding-top: 35vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome {
+    background-image: url('./sven-scheuermeier-saGbrA6s8g0-unsplash.jpg');
+    background-position: top center;
+    background-size: cover;
+}
+
+.about {
+    background-color: rgb(230, 230, 230);
+}
+
+.projects {
+    background-color: rgb(1, 74, 80);
+}
+
+.contact {
+    background-color: rgb(0, 35, 51);
+}
