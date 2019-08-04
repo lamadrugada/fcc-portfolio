@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Martel+Sans:700|Roboto:400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Martel+Sans:200,300,400;700&display=swap');
 
 * {
     -moz-box-sizing: border-box;
@@ -13,8 +13,9 @@ html {
 }
 
 body {
-    font-family:'Roboto Mono', monospace;
+    font-family:'Martel Sans', sans-serif;
     font-size: 1.5rem;
+    font-weight: 300;
     line-height: 2rem;
 }
 
@@ -45,6 +46,7 @@ h1 {
     
     font-family: 'Martel Sans', sans-serif;
     font-size: 5rem;
+    font-weight: 700;
     line-height: 4.5rem;
     text-align: center;
     animation-name: glow, light;
@@ -72,6 +74,7 @@ nav {
     height: 2rem;
     z-index: 40;
     padding: 0.75rem;
+    font-family:'Roboto Mono', monospace;
 }
 
 nav a {
